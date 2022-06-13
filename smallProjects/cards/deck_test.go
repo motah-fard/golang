@@ -8,8 +8,9 @@ import "testing"
 // T is the type of value that being passed into the function
 func TestNewDeck(t *testing.T) {
 	d := newDeck()
-	if len(d) != 52 {
-		t.Errorf("Expected deck length of 20, but got %d", len(d))
+	x := 52
+	if len(d) != x {
+		t.Errorf("Expected deck length of %x, but got %d", x, len(d))
 	}
 }
 
