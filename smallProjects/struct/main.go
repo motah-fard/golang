@@ -44,6 +44,7 @@ func main() {
 	// fmt.Println(jim)
 	// fmt.Printf("%+v", jim)
 	jim.print()
+	// adress : by pointing to value
 	jimPointer := &jim
 	jimPointer.updateName("jimmy")
 	jim.print()
@@ -60,6 +61,7 @@ func (p person) print() {
 // go copies that value and then the copy is made and then the copy is made available to the code
 // *person : this is a type discription : it means we are working with a pointer to a person
 // *pointerToPerson this is an operator : it means we want to manipulate the value the pointer is refrencing
+// have a pointer as reciever
 func (pointerToPerson *person) updateName(newFirstName string) {
 	(*pointerToPerson).firstName = newFirstName
 }
