@@ -58,6 +58,8 @@ func (p person) print() {
 // pass by value pointers
 // go is a pass by value language: pass a value into a function:
 // go copies that value and then the copy is made and then the copy is made available to the code
+// *person : this is a type discription : it means we are working with a pointer to a person
+// *pointerToPerson this is an operator : it means we want to manipulate the value the pointer is refrencing
 func (pointerToPerson *person) updateName(newFirstName string) {
 	(*pointerToPerson).firstName = newFirstName
 }
